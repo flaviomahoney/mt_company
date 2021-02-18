@@ -8,6 +8,16 @@
   background-color: lightblue;
 }
 
+.card-category-products {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  text-align: center;
+  background-color: lightblue;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
