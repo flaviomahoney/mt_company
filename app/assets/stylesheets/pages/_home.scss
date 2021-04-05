@@ -23,11 +23,17 @@
 }
 
 #somos {
-    height: 300px;
+    margin-top: 30px;
+    height: 100vh;
     text-align: center;
     vertical-align: middle;
+    font-family: Tahoma;
 }
 
-.content {
-    margin-top: 100px;
+.full-content {
+    display: flex;
+}
+
+.somos-photo {
+    height: 700px;
 }
