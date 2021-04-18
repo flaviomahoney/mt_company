@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/contato', to: 'pages#contato'
   get '/quem_somos', to: 'pages#quem_somos'
   get '/produto', to: 'pages#produto'
+  resources :messages
 end
