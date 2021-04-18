@@ -1,0 +1,8 @@
+<div class="container">
+    <% @messages.each do |message| %>
+        <p><%= message.nome %></p>
+        <p><%= message.sobrenome %></p>
+        <p><%= message.email %></p>
+        <p><%= message.descricao %></p>
+    <% end %>
+</div>
