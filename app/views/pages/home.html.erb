@@ -34,15 +34,18 @@
         </div>
     </div>
 
-    <div class="container">
-        <%= simple_form_for(@message) do |f| %>
-                <%= f.input :nome %>
-                <%= f.input :sobrenome %>
-                <%= f.input :email %>
-                <%= f.input :descricao %>
-                <%= f.button :submit , class: "btn btn-primary"%>
+    <div class="contact">
+        <%= simple_form_for @message, html: { class: "form"} do |f| %>
+                    <%= f.input :nome %>
+                    <%= f.input :sobrenome %>
+                    <%= f.input :email %>
+                    <%= f.input :descricao %>
+                    <%= f.button :submit , class: "btn btn-primary"%>
         <% end %>
+
+        <p class= "email">E-mail flavio@mahoneyt.com</p>
     </div>
+
     <div class="footer">
         <div class="footer-links">
             <a href="https://www.instagram.com/mt_company_oficial/"><i class="fab fa-instagram"></i></a>

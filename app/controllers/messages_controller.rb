@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
         @message = Message.new(message_params)
         if @message.save
           flash[:success] = "message successfully created"
-          redirect_to @home
+          redirect_to '/'
         else
           flash[:error] = "Something went wrong"
           render 'new'
