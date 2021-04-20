@@ -35,15 +35,24 @@
     </div>
 
     <div class="contact">
-        <%= simple_form_for @message, html: { class: "form"} do |f| %>
-                    <%= f.input :nome %>
-                    <%= f.input :sobrenome %>
-                    <%= f.input :email %>
-                    <%= f.input :descricao %>
-                    <%= f.button :submit , class: "btn btn-primary"%>
-        <% end %>
+        <div class="message">
+            <%= simple_form_for @message, html: { class: "form"} do |f| %>
+                        <%= f.input :nome %>
+                        <%= f.input :sobrenome %>
+                        <%= f.input :email %>
+                        <%= f.input :descricao %>
+                        <%= f.button :submit , class: "btn btn-primary"%>
+            <% end %>
+        </div>
 
-        <p class= "email">E-mail flavio@mahoneyt.com</p>
+        <div class="email">
+            <strong>Vendas: flavio@mahoneyt.com</strong>
+            <p></p>
+            <strong>Administrativo: beth@mahoneyt.com</strong>
+
+            
+        </div>
+
     </div>
 
     <div class="footer">
